@@ -4,20 +4,85 @@
   box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-  padding: 20px;
-  background: rgb(94, 171, 197);
-  color: #000;
-  border: 1px solid black;
-  box-shadow: 0px 3px 5px 1px rgb(0, 0, 0);
+:root {
+  --dark-sienna: #2b0504;
+  --dark-slate-gray: #315659;
+  --cream: #f3ffc6;
+  --desert-sand: #ecc8ae;
+  --rich-black: #000009;
 }
 
-.deck {
-  width: 250px;
-  height: 250px;
-  border: 1px solid red;
-  background: rgb(86, 172, 136);
-  font-size: 5rem;
+/* 
+Landing Page Styles
+*/
+
+.box {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+/* GRID-START */
+.container {
+  font-size: 4rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "header header header"
+    "play rules about"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background: var(--dark-sienna);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 10rem;
+  color: var(--cream);
+  letter-spacing: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background: var(--rich-black);
+  color: var(--desert-sand);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  grid-area: play;
+  background: var(--dark-slate-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules {
+  grid-area: rules;
+  background: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  grid-area: about;
+  background: var(--desert-sand);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
+/* GRID-END */
