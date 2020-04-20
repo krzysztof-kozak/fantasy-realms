@@ -15,19 +15,19 @@
 .drawPile {
   grid-area: drawPile;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .drawPile > img {
   width: 100%;
-  align-self: center;
+  align-self: start;
 }
 
 .discardPile {
   grid-area: discardPile;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, minmax(100px, 300px));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .discardPile > img {
