@@ -1,4 +1,5 @@
 import React from "react";
+import '../src/css/landingPage.css';
 
 export default function landingPage() {
   return (
@@ -19,7 +20,7 @@ export default function landingPage() {
         <p>About this Project</p>
       </section>
 
-      <footer>Footer info</footer>
+      <footer className="box">Footer info</footer>
     </div>
   );
 }

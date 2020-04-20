@@ -1,0 +1,55 @@
+.gameContainer {
+  background: var(--desert-sand);
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  grid-template-areas:
+    "drawPile discardPile"
+    "playerHand playerHand";
+}
+
+.drawPile {
+  grid-area: drawPile;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.drawPile > div {
+  box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
+    25px 25px 0px 0px #e1eeff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background: #1c6ea4;
+  width: 100%;
+  height: 100%;
+}
+
+.discardPile {
+  grid-area: discardPile;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.playerHand {
+  grid-area: playerHand;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.card {
+  background: var(--dark-slate-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

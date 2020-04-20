@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-sienna: #2b0504;
+  --dark-slate-gray: #315659;
+  --cream: #f3ffc6;
+  --desert-sand: #ecc8ae;
+  --rich-black: #000009;
+}
+
+
