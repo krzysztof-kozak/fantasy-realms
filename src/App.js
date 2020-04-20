@@ -4,7 +4,7 @@ import Play from "./play"
 
 const App = () => (
   <>
-    {/* <LandingPage /> */}
+    <LandingPage />
     <Play />
 
   </>

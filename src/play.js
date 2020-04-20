@@ -1,30 +1,31 @@
 import React from "react";
 import "../src/css/play.css";
+import card from "./imgs/Earth-Elemental.png";
+import deck from "./imgs/deck.png";
 
 export default function play() {
   return (
     <div className="gameContainer">
       <section className="drawPile">
-        <div>Draw pile</div>
+        <img src={deck} alt="card" />
       </section>
 
       <section className="discardPile">
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
       </section>
 
       <section className="playerHand">
-      <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
-        <div className="card box">Card</div>
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
+        <img src={card} alt="card" />
       </section>
     </div>
   );
