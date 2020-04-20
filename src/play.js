@@ -7,25 +7,29 @@ export default function play() {
   return (
     <div className="gameContainer">
       <section className="drawPile">
-        <img src={deck} alt="card" />
+        <div></div>
       </section>
 
       <section className="discardPile">
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+
+        <div></div>
+
+        <div></div>
       </section>
 
       <section className="playerHand">
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
-        <img src={card} alt="card" />
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </section>
     </div>
   );

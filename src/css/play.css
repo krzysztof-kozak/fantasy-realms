@@ -4,8 +4,8 @@
   margin: 0 auto;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   gap: 3rem;
   grid-template-areas:
     "drawPile discardPile"
@@ -14,13 +14,17 @@
 
 .drawPile {
   grid-area: drawPile;
+  align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  justify-items: center;
 }
 
-.drawPile > img {
-  width: 100%;
-  align-self: start;
+.drawPile > div {
+  background: url(../imgs/deck.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 50%;
 }
 
 .discardPile {
@@ -28,10 +32,14 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, fr);
 }
 
-.discardPile > img {
-  width: 100%;
+.discardPile div {
+  background: url(../imgs/Earth-Elemental.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .playerHand {
@@ -41,14 +49,10 @@
   grid-template-columns: repeat(7, 1fr);
 }
 
-.playerHand > img {
-  width: 100%;
-  align-self: center;
-}
-
-.card {
-  background: var(--dark-slate-gray);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.playerHand > div {
+  background: url(../imgs/Earth-Elemental.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: end;
+  height: 230px;
 }
