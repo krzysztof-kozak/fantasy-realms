@@ -28,19 +28,40 @@ export default function Play() {
 
   const handleStart = () => {
     const randomDeck = shuffle(cards);
-    setCards(randomDeck)
+    setCards([...randomDeck]);
+    setplayerHand([
+      cards[0],
+      cards[1],
+      cards[2],
+      cards[3],
+      cards[4],
+      cards[5],
+      cards[6],
+    ]);
   };
 
   return (
     <div className="gameContainer">
       <section className="drawPile">
         <div></div>
-        <button
-          onClick={handleStart}
-          style={{ padding: "5px", fontSize: "1rem" }}
-        >
-          START GAME
-        </button>
+        <section>
+          <button
+            onClick={handleStart}
+            style={{ padding: "5px", fontSize: "1rem" }}
+          >
+            DRAW
+          </button>
+          <span>
+            TOTAL SCORE:
+            {cards[0].basePoints +
+              cards[1].basePoints +
+              cards[2].basePoints +
+              cards[3].basePoints +
+              cards[4].basePoints +
+              cards[5].basePoints +
+              cards[6].basePoints}
+          </span>
+        </section>
       </section>
 
       <section className="discardPile">
@@ -61,10 +82,101 @@ export default function Play() {
           <p>Total Value: {cards[0].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[0].image})`,
+              background: `url(./deck/${cards[22].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              height: "85%",
+            }}
+            className="card"
+          ></div>
+        </div>
+
+        <div className="card-container">
+          <button>Discard</button>
+          <p>Total Value: {cards[1].basePoints}</p>
+          <div
+            style={{
+              background: `url(./deck/${cards[1].image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "85%",
+            }}
+            className="card"
+          ></div>
+        </div>
+
+        <div className="card-container">
+          <button>Discard</button>
+          <p>Total Value: {cards[2].basePoints}</p>
+          <div
+            style={{
+              background: `url(./deck/${cards[2].image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "85%",
+            }}
+            className="card"
+          ></div>
+        </div>
+
+        <div className="card-container">
+          <button>Discard</button>
+          <p>Total Value: {cards[3].basePoints}</p>
+          <div
+            style={{
+              background: `url(./deck/${cards[3].image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "85%",
+            }}
+            className="card"
+          ></div>
+        </div>
+
+        <div className="card-container">
+          <button>Discard</button>
+          <p>Total Value: {cards[4].basePoints}</p>
+          <div
+            style={{
+              background: `url(./deck/${cards[4].image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "85%",
+            }}
+            className="card"
+          ></div>
+        </div>
+
+        <div className="card-container">
+          <button>Discard</button>
+          <p>Total Value: {cards[5].basePoints}</p>
+          <div
+            style={{
+              background: `url(./deck/${cards[5].image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "85%",
+            }}
+            className="card"
+          ></div>
+        </div>
+
+        <div className="card-container">
+          <button>Discard</button>
+          <p>Total Value: {cards[6].basePoints}</p>
+          <div
+            style={{
+              background: `url(./deck/${cards[6].image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "85%",
             }}
             className="card"
           ></div>

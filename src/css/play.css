@@ -21,8 +21,7 @@
 }
 
 .drawPile > div {
-  /* background: url(../deck/deck.jpg);  <--this broke :( */
-  background: red;
+  background: url(/deck/deck.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,8 +38,7 @@
 }
 
 .discardPile div {
-  /* background: url(../deck/necromancer.jpg);  <--this broke :( */
-  background: red;
+  background: url(/deck/necromancer.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
@@ -59,11 +57,13 @@
   height: 60%;
 }
 
+.card-container .card {
+  font-size: 1rem;
+  align-self: center;
+  height: 60%;
+}
+
 .card-container button {
   padding: 3px 5px;
   font-size: 1rem;
-}
-
-.playerHand .card {
-  height: 85%;
 }

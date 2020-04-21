@@ -179,7 +179,7 @@
       "name": "Collector",
       "type": "Wizard",
       "basePoints": 7,
-      "image": "wizard.jpg",
+      "image": "collector.jpg",
       "id": 25
     },
     {
@@ -193,7 +193,7 @@
       "name": "Necromancer",
       "type": "Wizard",
       "basePoints": 3,
-      "image": "Necromancer.jpg",
+      "image": "necromancer.jpg",
       "id": 27
     },
     {
@@ -312,7 +312,7 @@
       "name": "War dirigible",
       "type": "Weapon",
       "basePoints": 35,
-      "image": "",
+      "image": "war-dirigble.jpg",
       "id": 44
     },
     {
@@ -340,7 +340,7 @@
       "name": "Book of Changes",
       "type": "Articifact",
       "basePoints": 3,
-      "image": "",
+      "image": "book of Changes",
       "id": 48
     },
     {
@@ -354,28 +354,28 @@
       "name": "Shapeshifter",
       "type": "Wild",
       "basePoints": 0,
-      "image": "Shapeshifter.jpg",
+      "image": "shapeshifter.jpg",
       "id": 50
     },
     {
       "name": "Mirage",
       "type": "Wild",
       "basePoints": 0,
-      "image": "Mirage.jpg",
+      "image": "mirage.jpg",
       "id": 51
     },
     {
       "name": "Doppleganger",
       "type": "Wild",
       "basePoints": 0,
-      "image": "Doppleganger.jpg",
+      "image": "doppelganger.jpg",
       "id": 52
     },
     {
       "name": "Jester",
       "type": "Wizard",
       "basePoints": 3,
-      "image": "Jester.jpg",
+      "image": "jester.jpg",
       "id": 53
     }
   ]
