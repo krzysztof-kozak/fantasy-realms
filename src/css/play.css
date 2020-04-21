@@ -21,7 +21,8 @@
 }
 
 .drawPile > div {
-  background: url(../deck/deck.jpg);
+  /* background: url(../deck/deck.jpg);  <--this broke :( */
+  background: red;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +39,8 @@
 }
 
 .discardPile div {
-  background: url(../deck/necromancer.jpg);
+  /* background: url(../deck/necromancer.jpg);  <--this broke :( */
+  background: red;
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
