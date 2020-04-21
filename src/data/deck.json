@@ -4,7 +4,7 @@
       "name": "Earth Elemental",
       "type": "Land",
       "basePoints": 4,
-      "image": "",
+      "image": "../deck/earth-elemental.jpg",
       "id": 1
     },
 

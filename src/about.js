@@ -1,9 +1,8 @@
 import React from "react";
 import "../src/css/about.css";
-import deck from "./data/deck.json";
+
 
 export default function rules() {
-  console.log(deck.cards[0].name);
 
   return (
     <div className="aboutContainer">

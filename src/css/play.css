@@ -13,20 +13,19 @@
 }
 
 .drawPile {
-
   grid-area: drawPile;
-  align-items: center;
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
   justify-items: center;
-
 }
 
 .drawPile > div {
   background: url(../deck/deck.jpg);
- background-size: contain;
- background-repeat: no-repeat;
- height: 50%;
- width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 50%;
 }
 
 .discardPile {
@@ -35,7 +34,6 @@
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, fr);
- 
 }
 
 .discardPile div {
@@ -43,9 +41,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
-
 }
-
 
 .playerHand {
   grid-area: playerHand;
@@ -54,10 +50,20 @@
   grid-template-columns: repeat(7, 1fr);
 }
 
-.playerHand > div {
-  background: url(../deck/jester.jpg);
+.card-container {
+  font-size: 1rem;
+  align-self: center;
+  height: 60%;
+}
+
+.card-container button {
+  padding: 3px 5px;
+  font-size: 1rem;
+}
+
+.playerHand .card {
+  /* background: url(../deck/earth-elemental.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
-  align-self: end;
-  height: 230px;
+  height: 85%;
 }
