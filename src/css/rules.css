@@ -1,0 +1,19 @@
+.rulesContainer {
+  font-size: 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--cream);
+  color: var(--rich-black);
+}
+
+.rulesBox {
+  border: 3px solid var(--dark-slate-gray);
+  padding: 50px;
+  background: var(--desert-sand);
+  width: 60%;
+  text-align: center;
+}

@@ -22,7 +22,7 @@
 }
 
 .drawPile > div {
-  background: url(../imgs/deck.png);
+  background: url(../deck/deck.jpg);
  background-size: contain;
  background-repeat: no-repeat;
  height: 50%;
@@ -39,7 +39,7 @@
 }
 
 .discardPile div {
-  background: url(../imgs/Earth-Elemental.png);
+  background: url(../deck/necromancer.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
@@ -55,7 +55,7 @@
 }
 
 .playerHand > div {
-  background: url(../imgs/Earth-Elemental.png);
+  background: url(../deck/jester.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   align-self: end;

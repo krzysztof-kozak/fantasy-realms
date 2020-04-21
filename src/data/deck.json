@@ -1,0 +1,382 @@
+{
+  "cards": [
+    {
+      "name": "Earth Elemental",
+      "type": "Land",
+      "basePoints": 4,
+      "image": "",
+      "id": 1
+    },
+
+    {
+      "name": "Mountain",
+      "type": "Land",
+      "basePoints": 9,
+      "image": "",
+      "id": 2
+    },
+    {
+      "name": "Cavern",
+      "type": "Land",
+      "basePoints": 6,
+      "image": "",
+      "id": 3
+    },
+    {
+      "name": "Bell Tower",
+      "type": "Land",
+      "basePoints": 8,
+      "image": "",
+      "id": 4
+    },
+    {
+      "name": "Forest",
+      "type": "Land",
+      "basePoints": 7,
+      "image": "",
+      "id": 5
+    },
+    {
+      "name": "Fountain of Life",
+      "type": "Flood",
+      "basePoints": 1,
+      "image": "",
+      "id": 6
+    },
+    {
+      "name": "Swamp",
+      "type": "Flood",
+      "basePoints": 18,
+      "image": "",
+      "id": 7
+    },
+    {
+      "name": "Great Flood",
+      "type": "Flood",
+      "basePoints": 32,
+      "image": "",
+      "id": 8
+    },
+    {
+      "name": "Island",
+      "type": "Flood",
+      "basePoints": 14,
+      "image": "",
+      "id": 9
+    },
+    {
+      "name": "Water Elemental",
+      "type": "flood",
+      "basePoints": 4,
+      "image": "",
+      "id": 10
+    },
+    {
+      "name": "Rainstorm",
+      "type": "Weather",
+      "basePoints": 8,
+      "image": "",
+      "id": 11
+    },
+    {
+      "name": "Blizzard",
+      "type": "Weather",
+      "basePoints": 30,
+      "image": ""
+    },
+    {
+      "name": "Smoke",
+      "type": "Weather",
+      "basePoints": 27,
+      "image": "",
+      "id": 12
+    },
+    {
+      "name": "Whirlwind",
+      "type": "Weather",
+      "basePoints": 13,
+      "image": "",
+      "id": 13
+    },
+    {
+      "name": "Air Elemental",
+      "type": "Weather",
+      "basePoints": 14,
+      "image": "",
+      "id": 14
+    },
+    {
+      "name": "Wildfire",
+      "type": "Flame",
+      "basePoints": 40,
+      "image": "",
+      "id": 15
+    },
+    {
+      "name": "Candle",
+      "type": "Flame",
+      "basePoints": 2,
+      "image": "",
+      "id": 16
+    },
+    {
+      "name": "Forge",
+      "type": "Flame",
+      "basePoints": 9,
+      "image": "",
+      "id": 17
+    },
+    {
+      "name": "Lightning",
+      "type": "Flame",
+      "basePoints": 11,
+      "image": "",
+      "id": 18
+    },
+    {
+      "name": "Fire Elemental",
+      "type": "Flame",
+      "basePoints": 4,
+      "image": "",
+      "id": 19
+    },
+    {
+      "name": "Knights",
+      "type": "Army",
+      "basePoints": 20,
+      "image": "",
+      "id": 20
+    },
+    {
+      "name": "Elven Archers",
+      "type": "Army",
+      "basePoints": 10,
+      "image": "",
+      "id": 21
+    },
+    {
+      "name": "Light Cavalry",
+      "type": "Army",
+      "basePoints": 17,
+      "image": "",
+      "id": 22
+    },
+    {
+      "name": "Dwarvish Infantry",
+      "type": "Army",
+      "basePoints": 15,
+      "image": "",
+      "id": 23
+    },
+    {
+      "name": "Rangers",
+      "type": "Army",
+      "basePoints": 5,
+      "image": "",
+      "id": 24
+    },
+    {
+      "name": "Collector",
+      "type": "Wizard",
+      "basePoints": 7,
+      "image": "",
+      "id": 25
+    },
+    {
+      "name": "Beastmaster",
+      "type": "Wizard",
+      "basePoints": 9,
+      "image": "",
+      "id": 26
+    },
+    {
+      "name": "Necromancer",
+      "type": "Wizard",
+      "basePoints": 3,
+      "image": "",
+      "id": 27
+    },
+    {
+      "name": "Warlock Lord",
+      "type": "Wizard",
+      "basePoints": 25,
+      "image": "",
+      "id": 28
+    },
+    {
+      "name": "Enchantress",
+      "type": "Wizard",
+      "basePoints": 5,
+      "image": "",
+      "id": 29
+    },
+    {
+      "name": "King",
+      "type": "Leader",
+      "basePoints": 8,
+      "image": "",
+      "id": 30
+    },
+    {
+      "name": "Queen",
+      "type": "Leader",
+      "basePoints": 6,
+      "image": "",
+      "id": 31
+    },
+    {
+      "name": "Princess",
+      "type": "Leader",
+      "basePoints": 2,
+      "image": "",
+      "id": 32
+    },
+    {
+      "name": "Warlord",
+      "type": "Leader",
+      "basePoints": 4,
+      "image": "",
+      "id": 33
+    },
+    {
+      "name": "Empress",
+      "type": "Leaders",
+      "basePoints": 15,
+      "image": "",
+      "id": 34
+    },
+    {
+      "name": "Unicorn",
+      "type": "Beast",
+      "basePoints": 9,
+      "image": "",
+      "id": 35
+    },
+    {
+      "name": "Basilisk",
+      "type": "Beast",
+      "basePoints": 35,
+      "image": "",
+      "id": 36
+    },
+    {
+      "name": "Warhorse",
+      "type": "Beast",
+      "basePoints": 6,
+      "image": "",
+      "id": 37
+    },
+    {
+      "name": "Dragon",
+      "type": "Beast",
+      "basePoints": 30,
+      "image": "",
+      "id": 38
+    },
+    {
+      "name": "Hydra",
+      "type": "Beast",
+      "basePoints": 12,
+      "image": "",
+      "id": 39
+    },
+    {
+      "name": "Warship",
+      "type": "Weapon",
+      "basePoints": 23,
+      "image": "",
+      "id": 34
+    },
+    {
+      "name": "Magic Wand",
+      "type": "Weapon",
+      "basePoints": 1,
+      "image": "",
+      "id": 41
+    },
+    {
+      "name": "Sword of Ketch",
+      "type": "Weapon",
+      "basePoints": 7,
+      "image": "",
+      "id": 42
+    },
+    {
+      "name": "Elven Longbow",
+      "type": "Weapon",
+      "basePoints": 3,
+      "image": "",
+      "id": 43
+    },
+    {
+      "name": "War dirigible",
+      "type": "Weapon",
+      "basePoints": 35,
+      "image": "",
+      "id": 44
+    },
+    {
+      "name": "Shield of Ketch",
+      "type": "Articifact",
+      "basePoints": 4,
+      "image": "",
+      "id": 45
+    },
+    {
+      "name": "Gem of Order",
+      "type": "Articifact",
+      "basePoints": 5,
+      "image": "",
+      "id": 46
+    },
+    {
+      "name": "World Tree",
+      "type": "Articifact",
+      "basePoints": 2,
+      "image": "",
+      "id": 47
+    },
+    {
+      "name": "Book of Changes",
+      "type": "Articifact",
+      "basePoints": 3,
+      "image": "",
+      "id": 48
+    },
+    {
+      "name": "Protection Rune",
+      "type": "Articifact",
+      "basePoints": 1,
+      "image": "",
+      "id": 49
+    },
+    {
+      "name": "Shapeshifter",
+      "type": "Wild",
+      "basePoints": 0,
+      "image": "",
+      "id": 50
+    },
+    {
+      "name": "Mirage",
+      "type": "Wild",
+      "basePoints": 0,
+      "image": "",
+      "id": 51
+    },
+    {
+      "name": "Doppleganger",
+      "type": "Wild",
+      "basePoints": 0,
+      "image": "",
+      "id": 52
+    },
+    {
+      "name": "Jester",
+      "type": "Wizard",
+      "basePoints": 3,
+      "image": "",
+      "id": 53
+    }
+  ]
+}
