@@ -51,13 +51,13 @@
   grid-template-columns: repeat(7, 1fr);
 }
 
-.card-container {
+.cardContainer {
   font-size: 1rem;
   align-self: center;
   height: 60%;
 }
 
-.card-container button {
+.cardContainer button {
   padding: 3px 5px;
   font-size: 1rem;
 }
