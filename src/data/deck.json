@@ -4,7 +4,7 @@
       "name": "Earth Elemental",
       "type": "Land",
       "basePoints": 4,
-      "image": "../deck/earth-elemental.jpg",
+      "image": "earth-elemental.jpg",
       "id": 1
     },
 
@@ -12,104 +12,104 @@
       "name": "Mountain",
       "type": "Land",
       "basePoints": 9,
-      "image": "",
+      "image": "mountain.jpg",
       "id": 2
     },
     {
       "name": "Cavern",
       "type": "Land",
       "basePoints": 6,
-      "image": "",
+      "image": "cavern.jpg",
       "id": 3
     },
     {
       "name": "Bell Tower",
       "type": "Land",
       "basePoints": 8,
-      "image": "",
+      "image": "bell-tower.jpg",
       "id": 4
     },
     {
       "name": "Forest",
       "type": "Land",
       "basePoints": 7,
-      "image": "",
+      "image": "forest.jpg",
       "id": 5
     },
     {
       "name": "Fountain of Life",
       "type": "Flood",
       "basePoints": 1,
-      "image": "",
+      "image": "fountain-of-life.jpg",
       "id": 6
     },
     {
       "name": "Swamp",
       "type": "Flood",
       "basePoints": 18,
-      "image": "",
+      "image": "swamp.jpg",
       "id": 7
     },
     {
       "name": "Great Flood",
       "type": "Flood",
       "basePoints": 32,
-      "image": "",
+      "image": "great-flood.jpg",
       "id": 8
     },
     {
       "name": "Island",
       "type": "Flood",
       "basePoints": 14,
-      "image": "",
+      "image": "island.jpg",
       "id": 9
     },
     {
       "name": "Water Elemental",
       "type": "flood",
       "basePoints": 4,
-      "image": "",
+      "image": "water-elemental.jpg",
       "id": 10
     },
     {
       "name": "Rainstorm",
       "type": "Weather",
       "basePoints": 8,
-      "image": "",
+      "image": "rainstorm.jpg",
       "id": 11
     },
     {
       "name": "Blizzard",
       "type": "Weather",
       "basePoints": 30,
-      "image": ""
+      "image": "blizzard.jpg"
     },
     {
       "name": "Smoke",
       "type": "Weather",
       "basePoints": 27,
-      "image": "",
+      "image": "smoke.jpg",
       "id": 12
     },
     {
       "name": "Whirlwind",
       "type": "Weather",
       "basePoints": 13,
-      "image": "",
+      "image": "whirlwind.jpg",
       "id": 13
     },
     {
       "name": "Air Elemental",
       "type": "Weather",
       "basePoints": 14,
-      "image": "",
+      "image": "air-elemental.jpg",
       "id": 14
     },
     {
       "name": "Wildfire",
       "type": "Flame",
       "basePoints": 40,
-      "image": "",
+      "image": "wildfire.jpg",
       "id": 15
     },
     {

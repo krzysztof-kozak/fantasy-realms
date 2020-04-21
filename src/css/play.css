@@ -24,7 +24,8 @@
   background: url(../deck/deck.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 50%;
+  background-position: center;
+  height: 100%;
   width: 50%;
 }
 
@@ -62,8 +63,5 @@
 }
 
 .playerHand .card {
-  /* background: url(../deck/earth-elemental.jpg); */
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 85%;
 }
