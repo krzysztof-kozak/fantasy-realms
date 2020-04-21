@@ -116,196 +116,196 @@
       "name": "Candle",
       "type": "Flame",
       "basePoints": 2,
-      "image": "",
+      "image": "candle.jpg",
       "id": 16
     },
     {
       "name": "Forge",
       "type": "Flame",
       "basePoints": 9,
-      "image": "",
+      "image": "forge.jpg",
       "id": 17
     },
     {
       "name": "Lightning",
       "type": "Flame",
       "basePoints": 11,
-      "image": "",
+      "image": "lightning.jpg",
       "id": 18
     },
     {
       "name": "Fire Elemental",
       "type": "Flame",
       "basePoints": 4,
-      "image": "",
+      "image": "fire-elemental.jpg",
       "id": 19
     },
     {
       "name": "Knights",
       "type": "Army",
       "basePoints": 20,
-      "image": "",
+      "image": "knights.jpg",
       "id": 20
     },
     {
       "name": "Elven Archers",
       "type": "Army",
       "basePoints": 10,
-      "image": "",
+      "image": "elven-archers.jpg",
       "id": 21
     },
     {
       "name": "Light Cavalry",
       "type": "Army",
       "basePoints": 17,
-      "image": "",
+      "image": "light-cavalry.jpg",
       "id": 22
     },
     {
       "name": "Dwarvish Infantry",
       "type": "Army",
       "basePoints": 15,
-      "image": "",
+      "image": "dwarvish-infantry.jpg",
       "id": 23
     },
     {
       "name": "Rangers",
       "type": "Army",
       "basePoints": 5,
-      "image": "",
+      "image": "rangers.jpg",
       "id": 24
     },
     {
       "name": "Collector",
       "type": "Wizard",
       "basePoints": 7,
-      "image": "",
+      "image": "wizard.jpg",
       "id": 25
     },
     {
       "name": "Beastmaster",
       "type": "Wizard",
       "basePoints": 9,
-      "image": "",
+      "image": "beastmaster.jpg",
       "id": 26
     },
     {
       "name": "Necromancer",
       "type": "Wizard",
       "basePoints": 3,
-      "image": "",
+      "image": "Necromancer.jpg",
       "id": 27
     },
     {
       "name": "Warlock Lord",
       "type": "Wizard",
       "basePoints": 25,
-      "image": "",
+      "image": "warlock-lord.jpg",
       "id": 28
     },
     {
       "name": "Enchantress",
       "type": "Wizard",
       "basePoints": 5,
-      "image": "",
+      "image": "enchantress.jpg",
       "id": 29
     },
     {
       "name": "King",
       "type": "Leader",
       "basePoints": 8,
-      "image": "",
+      "image": "king.jpg",
       "id": 30
     },
     {
       "name": "Queen",
       "type": "Leader",
       "basePoints": 6,
-      "image": "",
+      "image": "queen.jpg",
       "id": 31
     },
     {
       "name": "Princess",
       "type": "Leader",
       "basePoints": 2,
-      "image": "",
+      "image": "princess.jpg",
       "id": 32
     },
     {
       "name": "Warlord",
       "type": "Leader",
       "basePoints": 4,
-      "image": "",
+      "image": "warlord.jpg",
       "id": 33
     },
     {
       "name": "Empress",
       "type": "Leaders",
       "basePoints": 15,
-      "image": "",
+      "image": "empress.jpg",
       "id": 34
     },
     {
       "name": "Unicorn",
       "type": "Beast",
       "basePoints": 9,
-      "image": "",
+      "image": "unicorn.jpg",
       "id": 35
     },
     {
       "name": "Basilisk",
       "type": "Beast",
       "basePoints": 35,
-      "image": "",
+      "image": "basilisk.jpg",
       "id": 36
     },
     {
       "name": "Warhorse",
       "type": "Beast",
       "basePoints": 6,
-      "image": "",
+      "image": "warhorse.jpg",
       "id": 37
     },
     {
       "name": "Dragon",
       "type": "Beast",
       "basePoints": 30,
-      "image": "",
+      "image": "dragon.jpg",
       "id": 38
     },
     {
       "name": "Hydra",
       "type": "Beast",
       "basePoints": 12,
-      "image": "",
+      "image": "hydra.jpg",
       "id": 39
     },
     {
       "name": "Warship",
       "type": "Weapon",
       "basePoints": 23,
-      "image": "",
+      "image": "warship.jpg",
       "id": 34
     },
     {
       "name": "Magic Wand",
       "type": "Weapon",
       "basePoints": 1,
-      "image": "",
+      "image": "magic-wand.jpg",
       "id": 41
     },
     {
-      "name": "Sword of Ketch",
+      "name": "Sword of Keth",
       "type": "Weapon",
       "basePoints": 7,
-      "image": "",
+      "image": "sword-of-keth.jpg",
       "id": 42
     },
     {
       "name": "Elven Longbow",
       "type": "Weapon",
       "basePoints": 3,
-      "image": "",
+      "image": "elven-longbow.jpg",
       "id": 43
     },
     {
@@ -316,24 +316,24 @@
       "id": 44
     },
     {
-      "name": "Shield of Ketch",
+      "name": "Shield of Keth",
       "type": "Articifact",
       "basePoints": 4,
-      "image": "",
+      "image": "shield-of-keth.jpg",
       "id": 45
     },
     {
       "name": "Gem of Order",
       "type": "Articifact",
       "basePoints": 5,
-      "image": "",
+      "image": "gem-of-order.jpg",
       "id": 46
     },
     {
       "name": "World Tree",
       "type": "Articifact",
       "basePoints": 2,
-      "image": "",
+      "image": "world-tree.jpg",
       "id": 47
     },
     {
@@ -347,35 +347,35 @@
       "name": "Protection Rune",
       "type": "Articifact",
       "basePoints": 1,
-      "image": "",
+      "image": "protection-rune.jpg",
       "id": 49
     },
     {
       "name": "Shapeshifter",
       "type": "Wild",
       "basePoints": 0,
-      "image": "",
+      "image": "Shapeshifter.jpg",
       "id": 50
     },
     {
       "name": "Mirage",
       "type": "Wild",
       "basePoints": 0,
-      "image": "",
+      "image": "Mirage.jpg",
       "id": 51
     },
     {
       "name": "Doppleganger",
       "type": "Wild",
       "basePoints": 0,
-      "image": "",
+      "image": "Doppleganger.jpg",
       "id": 52
     },
     {
       "name": "Jester",
       "type": "Wizard",
       "basePoints": 3,
-      "image": "",
+      "image": "Jester.jpg",
       "id": 53
     }
   ]
