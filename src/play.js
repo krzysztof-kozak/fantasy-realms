@@ -5,6 +5,7 @@ import deck from "./data/deck.json";
 export default function Play() {
   const [cards, setCards] = useState(deck.cards);
   const [playerHand, setPlayerHand] = useState([]);
+  const [discardPile, setdiscardPile] = useState([]);
   const [totalScore, setTotalScore] = useState(0);
 
   function shuffle(array) {
@@ -44,6 +45,7 @@ export default function Play() {
       firstCard[0],
     ]);
     setCards(copyCards);
+    setdiscardPile((prev) => [...prev, { ...toDiscard }]);
   };
 
   useEffect(() => {
@@ -53,6 +55,10 @@ export default function Play() {
       setTotalScore(sum.reduce((cur, prev) => cur + prev));
     });
   }, [playerHand]);
+
+  if (discardPile.length > 5) {
+    return <h1> GAME ENDED. YOUR TOTAL SCORE IS {totalScore} </h1>;
+  }
 
   return (
     <div className="gameContainer">
@@ -70,15 +76,16 @@ export default function Play() {
       </section>
 
       <section className="discardPile">
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
-
-        <div></div>
+        {discardPile.map((card) => (
+          <div
+            style={{
+              backgroundImage: `url(./deck/${card.image})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              height: "100%",
+            }}
+          ></div>
+        ))}
       </section>
 
       <section className="playerHand">

@@ -37,13 +37,6 @@
   grid-template-rows: repeat(2, fr);
 }
 
-.discardPile div {
-  background: url(/deck/necromancer.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
 .playerHand {
   grid-area: playerHand;
   display: grid;
