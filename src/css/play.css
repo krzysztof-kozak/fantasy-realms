@@ -48,7 +48,7 @@
   grid-area: playerHand;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .card-container {

@@ -28,6 +28,8 @@ export default function Play() {
 
   const handleStart = () => {
     const randomDeck = shuffle(cards);
+    setplayerHand(randomDeck.slice(0, 8));
+    setCards([...randomDeck].splice(0, 7));
     setCards([...randomDeck]);
     setplayerHand([
       cards[0],
@@ -37,6 +39,15 @@ export default function Play() {
       cards[4],
       cards[5],
       cards[6],
+    ]);
+  };
+
+  const discardCard = (id) => {
+    //wstaw nowa tablice do p hand
+    console.log(id);
+    setplayerHand((prev) => [
+      ...prev.filter((card) => card.id !== id),
+      cards[0],
     ]);
   };
 
@@ -82,7 +93,7 @@ export default function Play() {
           <p>Total Value: {cards[0].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[22].image})`,
+              backgroundImage: `url(./deck/${cards[0].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -93,11 +104,15 @@ export default function Play() {
         </div>
 
         <div className="card-container">
-          <button>Discard</button>
-          <p>Total Value: {cards[1].basePoints}</p>
+          <button onClick={() => discardCard(playerHand[1].id)}>Discard</button>
+          <p>
+            Total Value: {playerHand.length > 0 ? playerHand[1].basePoints : 0}
+          </p>
           <div
             style={{
-              background: `url(./deck/${cards[1].image})`,
+              backgroundImage: `url(./deck/${
+                playerHand.length > 0 ? playerHand[1].image : "default.jpg"
+              })`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -112,7 +127,7 @@ export default function Play() {
           <p>Total Value: {cards[2].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[2].image})`,
+              backgroundImage: `url(./deck/${cards[2].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -127,7 +142,7 @@ export default function Play() {
           <p>Total Value: {cards[3].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[3].image})`,
+              backgroundImage: `url(./deck/${cards[3].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -142,7 +157,7 @@ export default function Play() {
           <p>Total Value: {cards[4].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[4].image})`,
+              backgroundImage: `url(./deck/${cards[7].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -157,7 +172,7 @@ export default function Play() {
           <p>Total Value: {cards[5].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[5].image})`,
+              backgroundImage: `url(./deck/${cards[5].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
@@ -172,7 +187,7 @@ export default function Play() {
           <p>Total Value: {cards[6].basePoints}</p>
           <div
             style={{
-              background: `url(./deck/${cards[6].image})`,
+              backgroundImage: `url(./deck/${cards[6].image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
