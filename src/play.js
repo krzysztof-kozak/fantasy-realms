@@ -41,8 +41,7 @@ export default function Play() {
     const copyCards = cards.slice();
     const firstCard = copyCards.splice(0, 1);
     setPlayerHand((prev) => [
-      ...prev.filter((card) => card.id !== toDiscard.id),
-      firstCard[0],
+      ...prev.map((card) => card.id !== toDiscard.id ? card : firstCard[0]),
     ]);
     setCards(copyCards);
     setdiscardPile((prev) => [...prev, { ...toDiscard }]);
@@ -91,7 +90,7 @@ export default function Play() {
       <section className="playerHand">
         {playerHand.map((card) => (
           <div className="card-container">
-            <button onClick={() => discardCard(card)}>Discard</button>
+            <button disabled={true} onClick={() => discardCard(card)}>Discard</button>
             <p>Total Value: {card.basePoints}</p>
             <div
               style={{
