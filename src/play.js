@@ -7,6 +7,7 @@ export default function Play() {
   const [playerHand, setPlayerHand] = useState([]);
   const [discardPile, setdiscardPile] = useState([]);
   const [totalScore, setTotalScore] = useState(0);
+  const [isGameFinished, setisGameFinished] = useState(false);
 
   function shuffle(array) {
     //Fisher–Yates shuffle: source: https://bost.ocks.org/mike/shuffle/
@@ -41,7 +42,7 @@ export default function Play() {
     const copyCards = cards.slice();
     const firstCard = copyCards.splice(0, 1);
     setPlayerHand((prev) => [
-      ...prev.map((card) => card.id !== toDiscard.id ? card : firstCard[0]),
+      ...prev.map((card) => (card.id !== toDiscard.id ? card : firstCard[0])),
     ]);
     setCards(copyCards);
     setdiscardPile((prev) => [...prev, { ...toDiscard }]);
@@ -55,9 +56,10 @@ export default function Play() {
     });
   }, [playerHand]);
 
-  if (discardPile.length > 5) {
-    return <h1> GAME ENDED. YOUR TOTAL SCORE IS {totalScore} </h1>;
-  }
+  useEffect(() => {
+    discardPile.length >= 5 ? setisGameFinished(true): setisGameFinished(false)
+  
+  }, [discardPile])
 
   return (
     <div className="gameContainer">
@@ -90,7 +92,9 @@ export default function Play() {
       <section className="playerHand">
         {playerHand.map((card) => (
           <div className="card-container">
-            <button disabled={true} onClick={() => discardCard(card)}>Discard</button>
+            <button disabled={isGameFinished} onClick={() => discardCard(card)}>
+              Discard
+            </button>
             <p>Total Value: {card.basePoints}</p>
             <div
               style={{

@@ -6,7 +6,7 @@ import About from "./about";
 
 const App = () => (
   <>
-    <LandingPage />
+    {/* <LandingPage /> */}
     <Play />
     {/* <Rules /> */}
     {/* <About /> */}
