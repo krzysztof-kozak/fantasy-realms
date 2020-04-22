@@ -4,7 +4,7 @@ import deck from "./data/deck.json";
 
 export default function Play() {
   const [cards, setCards] = useState(deck.cards);
-  const [playerHand, setplayerHand] = useState([]);
+  const [playerHand, setPlayerHand] = useState([]);
   const [totalScore, setTotalScore] = useState(0);
 
   function shuffle(array) {
@@ -28,18 +28,31 @@ export default function Play() {
   }
 
   const handleStart = () => {
-    const randomDeck = shuffle(cards);
-    setplayerHand(randomDeck.slice(0, 8));
-    setCards([...randomDeck].splice(0, 7));
-    setCards([...randomDeck]);
+    const randomCards = shuffle([...cards]);
+
+    setPlayerHand(randomCards.slice(0, 8));
+
+    randomCards.splice(0, 8);
+    setCards(randomCards);
   };
 
   const discardCard = (toDiscard) => {
-    setplayerHand((prev) => [
-      ...prev.filter((card) => card !== toDiscard),
-      cards[0],
+    const copyCards = cards.slice();
+    const firstCard = copyCards.splice(0, 1);
+    setPlayerHand((prev) => [
+      ...prev.filter((card) => card.id !== toDiscard.id),
+      firstCard[0],
     ]);
+    setCards(copyCards);
   };
+
+  useEffect(() => {
+    let sum = [];
+    playerHand.forEach((card) => {
+      sum.push(card.basePoints);
+      setTotalScore(sum.reduce((cur, prev) => cur + prev));
+    });
+  }, [playerHand]);
 
   return (
     <div className="gameContainer">
