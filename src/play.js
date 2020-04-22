@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom"
 import "../src/css/play.css";
 import deck from "./data/deck.json";
 
@@ -78,7 +79,7 @@ export default function Play() {
   }, [discardPile]);
 
   return (
-    <div className="gameContainer">
+    <div className="gameContainer box">
       <section className="drawPile">
         <div></div>
         <section>
@@ -137,6 +138,8 @@ export default function Play() {
           </div>
         ))}
       </section>
+   
+      <Link className="link box" to="/">Back to Home</Link>
     </div>
   );
 }

@@ -2,6 +2,8 @@
   background: var(--desert-sand);
   max-width: 1280px;
   margin: 0 auto;
+  padding: 5px;
+  border: 1px solid black;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -10,6 +12,15 @@
   grid-template-areas:
     "drawPile discardPile"
     "playerHand playerHand";
+}
+
+.gameContainer .link {
+  font-size: 2rem;
+  padding: 10px;
+  background: khaki;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+  justify-self: center;
 }
 
 .drawPile {

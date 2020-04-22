@@ -51,6 +51,11 @@ footer {
   align-items: center;
 }
 
+footer {
+  color: var(--dark-slate-gray);
+  font-size: 2rem;
+}
+
 .rules {
   grid-area: rules;
   background: var(--cream);
@@ -66,4 +71,22 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.linkedIn {
+  color: var(--cream);
+  margin-left: 10px;
+}
+
+.linkedIn:hover {
+  color: hotpink;
+}
+
+.link {
+  color: var(--rich-black);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: hotpink;
 }

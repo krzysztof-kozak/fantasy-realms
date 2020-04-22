@@ -1,24 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../src/css/about.css";
-
+// import avatar from "./avatar"
 
 export default function rules() {
-
   return (
     <div className="aboutContainer">
-      <img src="../../public/avatar/avatar.jgp" alt="avatar" />
+      <img className="avatar" src="/avatar/avatar.jpg" alt="avatar" />
       <p className="aboutText">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta optio
-        excepturi voluptatem pariatur? Nisi nemo voluptates accusantium, dolorum
-        fuga dolor labore quod asperiores velit est, iusto molestiae fugit
-        mollitia nostrum? Esse ullam, veniam provident quisquam blanditiis,
-        harum autem recusandae eius dolorem sapiente ea ducimus animi voluptate
-        beatae quasi minima minus labore eveniet, consequatur tenetur quis cum.
-        Deleniti ducimus provident reiciendis. Numquam, voluptatum facilis.
-        Illum temporibus, autem atque delectus quaerat corrupti, sit adipisci,
-        explicabo minima laudantium recusandae distinctio iusto repellat a quas
-        ullam dolore nam. Voluptas quas obcaecati et nihil doloribus!
+        Hiya, my name is Kris and this is my game project. I copied an existing
+        physical game called Fantasy Realm. The gameplay mechanics are
+        simplified but I plan on expanding them in the future as my knowledge
+        and skill grow.
       </p>
+
+      <Link className="link box" to="/">
+        Back to Home
+      </Link>
     </div>
   );
 }

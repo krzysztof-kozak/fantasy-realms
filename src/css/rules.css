@@ -1,9 +1,10 @@
 .rulesContainer {
-  font-size: 4rem;
+  font-size: 2rem;
   max-width: 1280px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--cream);
@@ -14,6 +15,19 @@
   border: 3px solid var(--dark-slate-gray);
   padding: 50px;
   background: var(--desert-sand);
-  width: 60%;
+  width: 80%;
   text-align: center;
+}
+
+.rulesBox li {
+  list-style: square;
+  text-align: left;
+}
+
+.rulesContainer .link {
+  font-size: 2rem;
+  padding: 5px;
+  background: var(--dark-slate-gray);
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
 }

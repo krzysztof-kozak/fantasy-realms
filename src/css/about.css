@@ -4,7 +4,7 @@
   margin: 0 auto;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background: var(--cream);
@@ -13,4 +13,20 @@
 
 .aboutText {
   padding: 10px;
+  width: 60%;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 1px solid steelblue;
+  border-radius: 50%;
+}
+
+.aboutContainer .link {
+  font-size: 2rem;
+  padding: 5px;
+  background: var(--dark-slate-gray);
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
 }
