@@ -5,9 +5,11 @@ import deck from "./data/deck.json";
 export default function Play() {
   const [cards, setCards] = useState(deck.cards);
   const [playerHand, setPlayerHand] = useState([]);
-  const [discardPile, setdiscardPile] = useState([]);
+  const [discardPile, setDiscardPile] = useState([]);
   const [totalScore, setTotalScore] = useState(0);
+  const [isGameStarted, setisGameStarted] = useState(false);
   const [isGameFinished, setisGameFinished] = useState(false);
+  const [endGameMessageDiplay, setEndGameMessageDiplay] = useState("none");
 
   function shuffle(array) {
     //Fisher–Yates shuffle: source: https://bost.ocks.org/mike/shuffle/
@@ -45,7 +47,17 @@ export default function Play() {
       ...prev.map((card) => (card.id !== toDiscard.id ? card : firstCard[0])),
     ]);
     setCards(copyCards);
-    setdiscardPile((prev) => [...prev, { ...toDiscard }]);
+    setDiscardPile((prev) => [...prev, { ...toDiscard }]);
+  };
+
+  const restartGame = () => {
+    setCards(deck.cards);
+    setPlayerHand([]);
+    setDiscardPile([]);
+    setTotalScore(0);
+    setisGameStarted(false);
+    setisGameFinished(false);
+    setEndGameMessageDiplay("none");
   };
 
   useEffect(() => {
@@ -54,12 +66,16 @@ export default function Play() {
       sum.push(card.basePoints);
       setTotalScore(sum.reduce((cur, prev) => cur + prev));
     });
+
+    playerHand.length > 0 ? setisGameStarted(true) : setisGameStarted(false);
   }, [playerHand]);
 
   useEffect(() => {
-    discardPile.length >= 5 ? setisGameFinished(true): setisGameFinished(false)
-  
-  }, [discardPile])
+    if (discardPile.length >= 5) {
+      setisGameFinished(true);
+      setEndGameMessageDiplay("block");
+    }
+  }, [discardPile]);
 
   return (
     <div className="gameContainer">
@@ -67,12 +83,24 @@ export default function Play() {
         <div></div>
         <section>
           <button
+            disabled={isGameStarted}
             onClick={handleStart}
             style={{ padding: "5px", fontSize: "1rem" }}
           >
-            DRAW
+            Draw new hand
           </button>
-          <span>TOTAL SCORE:{totalScore}</span>
+          <button
+            onClick={restartGame}
+            style={{ display: endGameMessageDiplay }}
+          >
+            Restart
+          </button>
+          <span style={{ display: discardPile.length >= 5 ? "none" : "block" }}>
+            Current score:{totalScore}
+          </span>
+          <p style={{ display: endGameMessageDiplay }}>
+            Game finished. Your final score is {totalScore}
+          </p>
         </section>
       </section>
 
