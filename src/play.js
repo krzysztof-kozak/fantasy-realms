@@ -190,6 +190,11 @@ export default function Play() {
       <Link className="link box" to="/">
         Back to Home
       </Link>
+
+      <p className="movesCounter box" style={{ display: isGameStarted ? "flex" : "none" }}>
+        You can discard
+        <span className="score">{5 - discardPile.length}</span> more time(s).
+      </p>
     </div>
   );
 }
