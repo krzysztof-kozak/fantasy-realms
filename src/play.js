@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import swal from "@sweetalert/with-react";
 import "../src/css/play.css";
 import deck from "./data/deck.json";
 
@@ -75,6 +76,10 @@ export default function Play() {
     if (discardPile.length >= 5) {
       setisGameFinished(true);
       setEndGameMessageDiplay("block");
+
+      swal("Game Finished", `You discarded 5 cards`, "success", {
+        buttons: ["Restart", "OK"],
+      });
     }
   }, [discardPile]);
 
@@ -91,7 +96,8 @@ export default function Play() {
           >
             Draw new hand
           </button>
-          <button className="restartButton box"
+          <button
+            className="restartButton box"
             onClick={restartGame}
             style={{ display: endGameMessageDiplay }}
           >
@@ -101,14 +107,16 @@ export default function Play() {
             Current score:<span class="score">{totalScore}</span>
           </span>
           <p style={{ display: endGameMessageDiplay }}>
-            Game finished. Your final score is <span class="score">{totalScore}</span>
+            Game finished. Your final score is{" "}
+            <span class="score">{totalScore}</span>
           </p>
         </section>
       </section>
 
       <section className="discardPile">
         {discardPile.map((card) => (
-          <div className="card"
+          <div
+            className="card"
             style={{
               backgroundImage: `url(./deck/${card.image})`,
               backgroundSize: "contain",
