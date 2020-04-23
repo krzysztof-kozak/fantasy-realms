@@ -7,7 +7,7 @@
       "image": "earth-elemental.jpg",
       "id": 1,
       "bonus": {
-        "id": [13, 12, 60],
+        "id": [2],
         "value": 15
       }
     },
@@ -19,8 +19,8 @@
       "image": "forest.jpg",
       "id": 2,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [15, 16],
+        "value": 12
       }
     },
     {
@@ -30,29 +30,29 @@
       "image": "swamp.jpg",
       "id": 3,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [6, 7, 8, 9, 10, 11],
+        "value": -3
       }
     },
     {
       "name": "Water Elemental",
-      "type": "flood",
+      "type": "Flood",
       "basePoints": 4,
       "image": "water-elemental.jpg",
       "id": 4,
       "bonus": {
-        "id": [13, 12, 60],
+        "id": [3],
         "value": 15
       }
     },
     {
       "name": "Air Elemental",
       "type": "Weather",
-      "basePoints": 5,
+      "basePoints": 4,
       "image": "air-elemental.jpg",
       "id": 5,
       "bonus": {
-        "id": [13, 12, 60],
+        "id": [],
         "value": 15
       }
     },
@@ -64,8 +64,8 @@
       "image": "forge.jpg",
       "id": 6,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [17],
+        "value": 9
       }
     },
     {
@@ -75,8 +75,8 @@
       "image": "lightning.jpg",
       "id": 7,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [],
+        "value": 30
       }
     },
     {
@@ -86,7 +86,7 @@
       "image": "fire-elemental.jpg",
       "id": 8,
       "bonus": {
-        "id": [13, 12, 60],
+        "id": [6, 7],
         "value": 15
       }
     },
@@ -97,8 +97,8 @@
       "image": "light-cavalry.jpg",
       "id": 9,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [1, 2],
+        "value": -2
       }
     },
     {
@@ -108,8 +108,8 @@
       "image": "dwarvish-infantry.jpg",
       "id": 10,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [9, 11],
+        "value": -2
       }
     },
     {
@@ -119,19 +119,8 @@
       "image": "rangers.jpg",
       "id": 11,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
-      }
-    },
-    {
-      "name": "Warlock Lord",
-      "type": "Wizard",
-      "basePoints": 25,
-      "image": "warlock-lord.jpg",
-      "id": 12,
-      "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [1, 2],
+        "value": 10
       }
     },
     {
@@ -141,8 +130,8 @@
       "image": "enchantress.jpg",
       "id": 13,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [1, 2, 3, 4, 5, 6, 7, 8],
+        "value": 5
       }
     },
 
@@ -153,20 +142,20 @@
       "image": "princess.jpg",
       "id": 14,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [9, 10, 11, 13],
+        "value": 8
       }
     },
 
     {
       "name": "Dragon",
       "type": "Beast",
-      "basePoints": 30,
+      "basePoints": -10,
       "image": "dragon.jpg",
       "id": 15,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [13],
+        "value": 40
       }
     },
     {
@@ -176,8 +165,8 @@
       "image": "hydra.jpg",
       "id": 16,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [3],
+        "value": 28
       }
     },
 
@@ -188,8 +177,8 @@
       "image": "magic-wand.jpg",
       "id": 17,
       "bonus": {
-        "id": [13, 12, 60],
-        "value": 15
+        "id": [13],
+        "value": 25
       }
     }
   ]

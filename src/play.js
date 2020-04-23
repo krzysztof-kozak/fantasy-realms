@@ -36,7 +36,7 @@ export default function Play() {
   const handleStart = () => {
     const randomCards = shuffle([...cards]);
 
-    setPlayerHand(randomCards.slice(0, 8));
+    setPlayerHand(randomCards.slice(0, 7));
 
     randomCards.splice(0, 8);
     setCards(randomCards);
@@ -65,23 +65,18 @@ export default function Play() {
   };
 
   const calculateCardBonus = (currentCard) => {
-    //wyciągnij do zmiennej tablicę, z id-kami kart, które dają jakiś bonus
-    //wyciągnij do zmiennej wartość tego bonusu
-    const synergyCards = currentCard.bonus.id;
-    const bonusValue = currentCard.bonus.value;
-    console.log(
-      ` Jestem sobie obecnie sprawdzaną kartą, moje id to ${currentCard.id}. Za każdą inną kartę na ręcę, która ma id: ${synergyCards} dostaję bonus o wartości ${bonusValue}`
-    );
+    const synergyCards = currentCard.bonus.id; //które karty dają mi bonus?
+    const bonusValue = currentCard.bonus.value; //Jaka jest wartość bonusu?
+    let totalBonusValue = 0; //Łączna wartość zebranych bonusów
 
-    //sprawdź każdą inną kartę na ręce gracza, i zobacz czy jej id znajduje się w tablicy synergyCards
     playerHand.forEach((card) => {
+      // debugger;
+      //nie porównuj z samym sobą & i zobacz czy reszta kart daje mi bonus.
       if (currentCard.id !== card.id && synergyCards.includes(card.id)) {
-        console.log("bonus");
+        totalBonusValue += bonusValue;
       }
     });
-
-    //jeżeli jej id znajduję się w tablicy synargyCard to zwróc warrtość bonusu
-    return bonusValue;
+    return totalBonusValue;
   };
 
   useEffect(() => {
