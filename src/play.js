@@ -113,6 +113,7 @@ export default function Play() {
               backgroundImage: `url(./deck/${card.image})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
               height: "100%",
             }}
           ></div>
