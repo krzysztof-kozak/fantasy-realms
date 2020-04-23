@@ -191,10 +191,21 @@ export default function Play() {
         Back to Home
       </Link>
 
-      <p className="movesCounter box" style={{ display: isGameStarted ? "flex" : "none" }}>
-        You can discard
-        <span className="score">{5 - discardPile.length}</span> more time(s).
-      </p>
+      <div className="wrapper">
+        <p
+          className="gameHint"
+          style={{ display: isGameStarted ? "flex" : "none" }}
+        >
+          Try to get rid of cards that don't fit your hand :)
+        </p>
+        <p
+          className="movesCounter box"
+          style={{ display: isGameStarted ? "flex" : "none" }}
+        >
+          You can discard
+          <span className="score">{5 - discardPile.length}</span> more time(s).
+        </p>
+      </div>
     </div>
   );
 }
