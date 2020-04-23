@@ -23,16 +23,35 @@
     "footer footer footer";
 }
 
+.container section:hover, footer:hover {
+  transform: scale(1.1);
+  border: 3px solid hotpink;
+  transition: transform 2s ease-out, border 0.2s ease-out;
+}
+
 header {
   grid-area: header;
   background: var(--dark-sienna);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header > h1 {
-  font-size: 10rem;
+  font-size: 7rem;
   color: var(--cream);
   letter-spacing: 1rem;
+}
+
+header:hover {
+  transform: scale(1.1);
+  border: 3px solid hotpink;
+  transition: transform 2s ease-out, border 0.2s ease-out;
+}
+
+header:hover h1 {
+  color: hotpink;
+  transition: 3s ease-out;
 }
 
 footer {
@@ -57,6 +76,12 @@ footer {
   color: var(--dark-slate-gray);
   font-size: 2rem;
 }
+
+footer:hover p {
+  color: hotpink;
+  transition: 3s ease-out;
+}
+
 
 .rules {
   grid-area: rules;

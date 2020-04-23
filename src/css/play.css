@@ -98,6 +98,11 @@
   height: 60%;
 }
 
+.card:hover {
+  transform: scale(1.5) translateY(25%);
+  transition: transform 1s;
+}
+
 .card-container .card {
   font-size: 1rem;
   align-self: center;

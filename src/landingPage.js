@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-
 export default function landingPage() {
   return (
     <div className="container">
@@ -32,7 +31,7 @@ export default function landingPage() {
       </section>
 
       <footer className="box">
-        Made by Krzysztof Kozak{" "}
+        <p> Made by Krzysztof Kozak</p>
         <a
           href="https://www.linkedin.com/in/kriskozak/"
           target="_blank"
