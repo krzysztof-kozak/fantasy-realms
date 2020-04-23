@@ -114,7 +114,11 @@ export default function Play() {
       <section className="drawPile">
         <div></div>
         <section>
-          <button style={{display: isGameStarted ? "none" : "block"}} className="start-btn box" onClick={handleStart}>
+          <button
+            style={{ display: isGameStarted ? "none" : "block" }}
+            className="start-btn box"
+            onClick={handleStart}
+          >
             Start
           </button>
 
@@ -125,13 +129,10 @@ export default function Play() {
           >
             Restart
           </button>
-          <span style={{ display: discardPile.length >= 5 ? "none" : "block" }}>
+
+          <span style={{ display: isGameStarted ? "block" : "none" }}>
             Current score:<span className="score">{totalScore}</span>
           </span>
-          <p style={{ display: endGameMessageDiplay }}>
-            Game finished. Your final score is
-            <span className="score">{totalScore}</span>
-          </p>
         </section>
       </section>
 
