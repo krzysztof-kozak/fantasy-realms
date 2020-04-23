@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "../src/css/play.css";
 import deck from "./data/deck.json";
 
@@ -84,23 +84,24 @@ export default function Play() {
         <div></div>
         <section>
           <button
+            className="box"
             disabled={isGameStarted}
             onClick={handleStart}
             style={{ padding: "5px", fontSize: "1rem" }}
           >
             Draw new hand
           </button>
-          <button
+          <button className="restartButton box"
             onClick={restartGame}
             style={{ display: endGameMessageDiplay }}
           >
             Restart
           </button>
           <span style={{ display: discardPile.length >= 5 ? "none" : "block" }}>
-            Current score:{totalScore}
+            Current score:<span class="score">{totalScore}</span>
           </span>
           <p style={{ display: endGameMessageDiplay }}>
-            Game finished. Your final score is {totalScore}
+            Game finished. Your final score is <span class="score">{totalScore}</span>
           </p>
         </section>
       </section>
@@ -121,10 +122,17 @@ export default function Play() {
       <section className="playerHand">
         {playerHand.map((card) => (
           <div className="card-container">
-            <button disabled={isGameFinished} onClick={() => discardCard(card)}>
-              Discard
-            </button>
-            <p>Total Value: {card.basePoints}</p>
+            <div className="wrapper">
+              <button
+                disabled={isGameFinished}
+                onClick={() => discardCard(card)}
+              >
+                Discard
+              </button>
+              <p>
+                Total Value: <span class="score">{card.basePoints}</span>
+              </p>
+            </div>
             <div
               style={{
                 backgroundImage: `url(./deck/${card.image})`,
@@ -138,8 +146,10 @@ export default function Play() {
           </div>
         ))}
       </section>
-   
-      <Link className="link box" to="/">Back to Home</Link>
+
+      <Link className="link box" to="/">
+        Back to Home
+      </Link>
     </div>
   );
 }

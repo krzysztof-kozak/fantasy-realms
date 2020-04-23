@@ -1,25 +1,36 @@
 .aboutContainer {
   font-size: 1.5rem;
+  font-family: var(--main-font);
   max-width: 1280px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background: var(--cream);
   color: var(--rich-black);
 }
 
+.aboutContainer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutText {
   padding: 10px;
   width: 60%;
+  font-family: initial;
+  text-align: justify;
+  border-radius: 20px;
+  background: var(--desert-sand);
 }
 
 .avatar {
   width: 200px;
   height: 200px;
-  border: 1px solid steelblue;
+  /* border: 1px solid steelblue; */
   border-radius: 50%;
 }
 

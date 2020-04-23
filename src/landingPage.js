@@ -27,7 +27,7 @@ export default function landingPage() {
 
       <section className="about box">
         <Link className="link" to="/about">
-          About this project
+          About
         </Link>
       </section>
 

@@ -8,6 +8,7 @@
 }
 
 .container {
+  font-family: var(--main-font);
   font-size: 4rem;
   max-width: 1280px;
   margin: 0 auto;
@@ -41,6 +42,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: initial;
 }
 
 .play {

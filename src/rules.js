@@ -10,7 +10,7 @@ export default function rules() {
         <ul>
           <li>Start the game by drawing new hand.</li>
           <li>
-            You can replace a card in your hand 5 times via the discard button.
+            You can discard a card in your hand 5 times via the discard button.
           </li>
           <li>Try to replace the lowest value card.</li>
           <li>After 5 discards, you will see your final score.</li>

@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Link, Switch, NavLink } from "react-router-dom";
+import GoogleFontLoader from "react-google-font-loader";
 import LandingPage from "./landingPage";
 import Play from "./play";
 import Rules from "./rules";
@@ -8,6 +9,14 @@ import NotFound from "./notFound";
 
 const App = () => (
   <HashRouter>
+    <GoogleFontLoader
+      fonts={[
+        {
+          font: "Pacifico",
+          weights: [400],
+        },
+      ]}
+    />
     <Switch>
       <Route exact path="/" component={LandingPage} />
       <Route path="/play" component={Play} />
