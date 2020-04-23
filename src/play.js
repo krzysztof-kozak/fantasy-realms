@@ -40,6 +40,8 @@ export default function Play() {
 
     randomCards.splice(0, 8);
     setCards(randomCards);
+
+    setisGameStarted(true);
   };
 
   const discardCard = (toDiscard) => {
@@ -76,12 +78,20 @@ export default function Play() {
     if (discardPile.length >= 5) {
       setisGameFinished(true);
       setEndGameMessageDiplay("block");
-
-      swal("Game Finished", `You discarded 5 cards`, "success", {
-        buttons: ["Restart", "OK"],
-      });
     }
   }, [discardPile]);
+
+  useEffect(() => {
+    if (isGameFinished === true) {
+      swal("Game Finished", `Your total score was ${totalScore}`, "success", {
+        buttons: ["Restart", "OK", "yes"],
+      }).then((value) => {
+        if (value === null) {
+          restartGame();
+        }
+      });
+    }
+  }, [isGameFinished]);
 
   return (
     <div className="gameContainer box">
@@ -96,6 +106,7 @@ export default function Play() {
           >
             Draw new hand
           </button>
+
           <button
             className="restartButton box"
             onClick={restartGame}
@@ -104,11 +115,11 @@ export default function Play() {
             Restart
           </button>
           <span style={{ display: discardPile.length >= 5 ? "none" : "block" }}>
-            Current score:<span class="score">{totalScore}</span>
+            Current score:<span className="score">{totalScore}</span>
           </span>
           <p style={{ display: endGameMessageDiplay }}>
-            Game finished. Your final score is{" "}
-            <span class="score">{totalScore}</span>
+            Game finished. Your final score is
+            <span className="score">{totalScore}</span>
           </p>
         </section>
       </section>
@@ -116,6 +127,7 @@ export default function Play() {
       <section className="discardPile">
         {discardPile.map((card) => (
           <div
+            key={card.id}
             className="card"
             style={{
               backgroundImage: `url(./deck/${card.image})`,
@@ -130,7 +142,7 @@ export default function Play() {
 
       <section className="playerHand">
         {playerHand.map((card) => (
-          <div className="card-container">
+          <div key={card.id} className="card-container">
             <div className="wrapper">
               <button
                 disabled={isGameFinished}
@@ -139,7 +151,7 @@ export default function Play() {
                 Discard
               </button>
               <p>
-                Total Value: <span class="score">{card.basePoints}</span>
+                Total Value: <span className="score">{card.basePoints}</span>
               </p>
             </div>
             <div
