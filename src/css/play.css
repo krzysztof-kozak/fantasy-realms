@@ -17,14 +17,30 @@
 
 .gameContainer button {
   background: var(--desert-sand);
+  color: #fff;
+  box-shadow: 1px 1px 3px 0px black;
+  font-weight: bold;
+  border: 1px solid #66644c61;
+  border-radius: 10px;
+}
+
+.drawPile  .start-btn {
+  background: var(--desert-sand);
   color: var(--rich-black);
   box-shadow: 1px 1px 3px 0px black;
   text-shadow: 1px 1px 1px var(--dark-slate-gray);
   font-weight: bold;
-  border: 1px solid #f131ada1;
+  border: 2px solid #f131ada1;
   border-radius: 10px;
-  position: absolute;
-  transform: scale(3);
+  font-size: 3rem;
+  padding: 5px 21px;
+ 
+}
+
+.start-btn:hover {
+  border: 1px solid hotpink;
+  color: #bc2222fa;
+  transition: border 0.2s ease-out, color 1s ease-out forwards;
 }
 
 button:hover {

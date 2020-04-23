@@ -114,13 +114,8 @@ export default function Play() {
       <section className="drawPile">
         <div></div>
         <section>
-          <button
-            className="box"
-            disabled={isGameStarted}
-            onClick={handleStart}
-            style={{ padding: "5px", fontSize: "1rem" }}
-          >
-            Draw new hand
+          <button style={{display: isGameStarted ? "none" : "block"}} className="start-btn box" onClick={handleStart}>
+            Start
           </button>
 
           <button
