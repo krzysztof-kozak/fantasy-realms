@@ -88,6 +88,7 @@ export default function Play() {
     let sum = [];
     playerHand.forEach((card) => {
       sum.push(card.basePoints);
+      sum.push(calculateCardBonus(card));
       setTotalScore(sum.reduce((cur, prev) => cur + prev));
     });
 
