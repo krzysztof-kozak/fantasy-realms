@@ -84,7 +84,7 @@ export default function Play() {
   useEffect(() => {
     if (isGameFinished === true) {
       swal("Game Finished", `Your total score was ${totalScore}`, "success", {
-        buttons: ["Restart", "OK", "yes"],
+        buttons: ["Restart", "OK"],
       }).then((value) => {
         if (value === null) {
           restartGame();

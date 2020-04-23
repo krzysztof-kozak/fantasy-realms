@@ -103,7 +103,11 @@
       "type": "Weather",
       "basePoints": 14,
       "image": "air-elemental.jpg",
-      "id": 14
+      "id": 14,
+      "bonus": {
+        "type": "weather",
+        "value": 15
+      }
     },
     {
       "name": "Wildfire",
