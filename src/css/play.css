@@ -17,11 +17,14 @@
 
 .gameContainer button {
   background: var(--desert-sand);
-  color: #fff;
+  color: var(--rich-black);
   box-shadow: 1px 1px 3px 0px black;
+  text-shadow: 1px 1px 1px var(--dark-slate-gray);
   font-weight: bold;
-  border: 1px solid #66644c61;
+  border: 1px solid #f131ada1;
   border-radius: 10px;
+  position: absolute;
+  transform: scale(3);
 }
 
 button:hover {
@@ -106,7 +109,7 @@ button:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.56);
   border-radius: 20px;
-  box-shadow: 0px 0px 3px 2px rgba(0,0,0,.65);
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.65);
 }
 
 .discardPile::after {
@@ -125,7 +128,7 @@ button:hover {
   left: 35%;
   background: hsla(0, 0%, 100%, 0.6);
   border-radius: 20px;
-  box-shadow: 0px 0px 3px 2px rgba(0,0,0,.65);
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.65);
 }
 
 .playerHand {
@@ -146,7 +149,7 @@ button:hover {
   align-items: center;
   background: hsla(0, 0%, 100%, 0.6);
   border-radius: 20px;
-  box-shadow: 0px 0px 3px 2px rgba(0,0,0,.65);
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.65);
   position: absolute;
   bottom: 85%;
 }
