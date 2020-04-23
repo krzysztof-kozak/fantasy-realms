@@ -29,6 +29,10 @@
   font-size: 2rem;
   padding: 5px;
   background: var(--dark-slate-gray);
-  border: 1px solid yellowgreen;
   border-radius: 5px;
+}
+
+.rulesContainer .link:hover {
+  transform: scale(1.1);
+  border: 3px solid hotpink;
 }

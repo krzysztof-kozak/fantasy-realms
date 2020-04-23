@@ -116,7 +116,5 @@ footer:hover p {
 
 .link:hover {
   color: hotpink;
-  transform: scale(1.1);
-  border: 3px solid hotpink;
   transition: transform 2s ease-out, border 0.2s ease-out;
 }

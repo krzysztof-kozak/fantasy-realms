@@ -108,7 +108,7 @@ export default function Play() {
 
       <section className="discardPile">
         {discardPile.map((card) => (
-          <div
+          <div className="card"
             style={{
               backgroundImage: `url(./deck/${card.image})`,
               backgroundSize: "contain",

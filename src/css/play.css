@@ -17,11 +17,17 @@
 
 .gameContainer button {
   background: var(--desert-sand);
-  color: #bc2222fa;
+  color: #fff;
   box-shadow: 1px 1px 3px 0px black;
   font-weight: bold;
   border: 1px solid #66644c61;
   border-radius: 10px;
+}
+
+button:hover {
+  border: 1px solid hotpink;
+  color: #bc2222fa;
+  transition: border 0.2s ease-out, color 1s ease-out forwards;
 }
 
 .gameContainer button:active {
@@ -48,10 +54,15 @@
   justify-self: center;
 }
 
+.gameContainer .link:hover {
+  transform: scale(1.1);
+  border: 3px solid hotpink;
+}
+
 .drawPile {
   grid-area: drawPile;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -99,7 +110,7 @@
 }
 
 .card:hover {
-  transform: scale(1.5) translateY(25%);
+  transform: scale(1.5) translateY(15%);
   transition: transform 1s;
 }
 
