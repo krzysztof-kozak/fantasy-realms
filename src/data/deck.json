@@ -5,7 +5,11 @@
       "type": "Land",
       "basePoints": 4,
       "image": "earth-elemental.jpg",
-      "id": 1
+      "id": 1,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
 
     {
@@ -13,90 +17,143 @@
       "type": "Land",
       "basePoints": 9,
       "image": "mountain.jpg",
-      "id": 2
+      "id": 2,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Cavern",
       "type": "Land",
       "basePoints": 6,
       "image": "cavern.jpg",
-      "id": 3
+      "id": 3,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Bell Tower",
       "type": "Land",
       "basePoints": 8,
       "image": "bell-tower.jpg",
-      "id": 4
+      "id": 4,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Forest",
       "type": "Land",
       "basePoints": 7,
       "image": "forest.jpg",
-      "id": 5
+      "id": 5,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Fountain of Life",
       "type": "Flood",
       "basePoints": 1,
       "image": "fountain-of-life.jpg",
-      "id": 6
+      "id": 6,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Swamp",
       "type": "Flood",
       "basePoints": 18,
       "image": "swamp.jpg",
-      "id": 7
+      "id": 7,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Great Flood",
       "type": "Flood",
       "basePoints": 32,
       "image": "great-flood.jpg",
-      "id": 8
+      "id": 8,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Island",
       "type": "Flood",
       "basePoints": 14,
       "image": "island.jpg",
-      "id": 9
+      "id": 9,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Water Elemental",
       "type": "flood",
       "basePoints": 4,
       "image": "water-elemental.jpg",
-      "id": 10
+      "id": 10,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Rainstorm",
       "type": "Weather",
       "basePoints": 8,
       "image": "rainstorm.jpg",
-      "id": 11
+      "id": 11,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Blizzard",
       "type": "Weather",
       "basePoints": 30,
-      "image": "blizzard.jpg"
+      "image": "blizzard.jpg",
+      "id": 60,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Smoke",
       "type": "Weather",
       "basePoints": 27,
       "image": "smoke.jpg",
-      "id": 12
+      "id": 12,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Whirlwind",
       "type": "Weather",
       "basePoints": 13,
       "image": "whirlwind.jpg",
-      "id": 13
+      "id": 13,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Air Elemental",
@@ -105,7 +162,7 @@
       "image": "air-elemental.jpg",
       "id": 14,
       "bonus": {
-        "type": "weather",
+        "id": [13, 12, 60],
         "value": 15
       }
     },
@@ -114,273 +171,429 @@
       "type": "Flame",
       "basePoints": 40,
       "image": "wildfire.jpg",
-      "id": 15
+      "id": 15,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Candle",
       "type": "Flame",
       "basePoints": 2,
       "image": "candle.jpg",
-      "id": 16
+      "id": 16,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Forge",
       "type": "Flame",
       "basePoints": 9,
       "image": "forge.jpg",
-      "id": 17
+      "id": 17,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Lightning",
       "type": "Flame",
       "basePoints": 11,
       "image": "lightning.jpg",
-      "id": 18
+      "id": 18,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Fire Elemental",
       "type": "Flame",
       "basePoints": 4,
       "image": "fire-elemental.jpg",
-      "id": 19
+      "id": 19,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Knights",
       "type": "Army",
       "basePoints": 20,
       "image": "knights.jpg",
-      "id": 20
+      "id": 20,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Elven Archers",
       "type": "Army",
       "basePoints": 10,
       "image": "elven-archers.jpg",
-      "id": 21
+      "id": 21,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Light Cavalry",
       "type": "Army",
       "basePoints": 17,
       "image": "light-cavalry.jpg",
-      "id": 22
+      "id": 22,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Dwarvish Infantry",
       "type": "Army",
       "basePoints": 15,
       "image": "dwarvish-infantry.jpg",
-      "id": 23
+      "id": 23,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Rangers",
       "type": "Army",
       "basePoints": 5,
       "image": "rangers.jpg",
-      "id": 24
+      "id": 24,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Collector",
       "type": "Wizard",
       "basePoints": 7,
       "image": "collector.jpg",
-      "id": 25
+      "id": 25,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Beastmaster",
       "type": "Wizard",
       "basePoints": 9,
       "image": "beastmaster.jpg",
-      "id": 26
+      "id": 26,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Necromancer",
       "type": "Wizard",
       "basePoints": 3,
       "image": "necromancer.jpg",
-      "id": 27
+      "id": 27,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Warlock Lord",
       "type": "Wizard",
       "basePoints": 25,
       "image": "warlock-lord.jpg",
-      "id": 28
+      "id": 28,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Enchantress",
       "type": "Wizard",
       "basePoints": 5,
       "image": "enchantress.jpg",
-      "id": 29
+      "id": 29,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "King",
       "type": "Leader",
       "basePoints": 8,
       "image": "king.jpg",
-      "id": 30
+      "id": 30,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Queen",
       "type": "Leader",
       "basePoints": 6,
       "image": "queen.jpg",
-      "id": 31
+      "id": 31,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Princess",
       "type": "Leader",
       "basePoints": 2,
       "image": "princess.jpg",
-      "id": 32
+      "id": 32,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Warlord",
       "type": "Leader",
       "basePoints": 4,
       "image": "warlord.jpg",
-      "id": 33
+      "id": 33,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Empress",
       "type": "Leaders",
       "basePoints": 15,
       "image": "empress.jpg",
-      "id": 34
+      "id": 34,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Unicorn",
       "type": "Beast",
       "basePoints": 9,
       "image": "unicorn.jpg",
-      "id": 35
+      "id": 35,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Basilisk",
       "type": "Beast",
       "basePoints": 35,
       "image": "basilisk.jpg",
-      "id": 36
+      "id": 36,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Warhorse",
       "type": "Beast",
       "basePoints": 6,
       "image": "warhorse.jpg",
-      "id": 37
+      "id": 37,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Dragon",
       "type": "Beast",
       "basePoints": 30,
       "image": "dragon.jpg",
-      "id": 38
+      "id": 38,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Hydra",
       "type": "Beast",
       "basePoints": 12,
       "image": "hydra.jpg",
-      "id": 39
+      "id": 39,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Warship",
       "type": "Weapon",
       "basePoints": 23,
       "image": "warship.jpg",
-      "id": 40
+      "id": 40,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Magic Wand",
       "type": "Weapon",
       "basePoints": 1,
       "image": "magic-wand.jpg",
-      "id": 41
+      "id": 41,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Sword of Keth",
       "type": "Weapon",
       "basePoints": 7,
       "image": "sword-of-keth.jpg",
-      "id": 42
+      "id": 42,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Elven Longbow",
       "type": "Weapon",
       "basePoints": 3,
       "image": "elven-longbow.jpg",
-      "id": 43
+      "id": 43,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "War dirigible",
       "type": "Weapon",
       "basePoints": 35,
       "image": "war-dirigble.jpg",
-      "id": 44
+      "id": 44,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Shield of Keth",
       "type": "Articifact",
       "basePoints": 4,
       "image": "shield-of-keth.jpg",
-      "id": 45
+      "id": 45,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Gem of Order",
       "type": "Articifact",
       "basePoints": 5,
       "image": "gem-of-order.jpg",
-      "id": 46
+      "id": 46,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "World Tree",
       "type": "Articifact",
       "basePoints": 2,
       "image": "world-tree.jpg",
-      "id": 47
+      "id": 47,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Book of Changes",
       "type": "Articifact",
       "basePoints": 3,
       "image": "book-of-changes.jpg",
-      "id": 48
+      "id": 48,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Protection Rune",
       "type": "Articifact",
       "basePoints": 1,
       "image": "protection-rune.jpg",
-      "id": 49
+      "id": 49,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Shapeshifter",
       "type": "Wild",
       "basePoints": 0,
       "image": "shapeshifter.jpg",
-      "id": 50
+      "id": 50,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Mirage",
       "type": "Wild",
       "basePoints": 0,
       "image": "mirage.jpg",
-      "id": 51
+      "id": 51,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Doppleganger",
       "type": "Wild",
       "basePoints": 0,
       "image": "doppelganger.jpg",
-      "id": 52
+      "id": 52,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     },
     {
       "name": "Jester",
       "type": "Wizard",
       "basePoints": 3,
       "image": "jester.jpg",
-      "id": 53
+      "id": 53,
+      "bonus": {
+        "id": [13, 12, 60],
+        "value": 15
+      }
     }
   ]
 }

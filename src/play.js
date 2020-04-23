@@ -64,6 +64,26 @@ export default function Play() {
     setEndGameMessageDiplay("none");
   };
 
+  const calculateCardBonus = (currentCard) => {
+    //wyciągnij do zmiennej tablicę, z id-kami kart, które dają jakiś bonus
+    //wyciągnij do zmiennej wartość tego bonusu
+    const synergyCards = currentCard.bonus.id;
+    const bonusValue = currentCard.bonus.value;
+    console.log(
+      ` Jestem sobie obecnie sprawdzaną kartą, moje id to ${currentCard.id}. Za każdą inną kartę na ręcę, która ma id: ${synergyCards} dostaję bonus o wartości ${bonusValue}`
+    );
+
+    //sprawdź każdą inną kartę na ręce gracza, i zobacz czy jej id znajduje się w tablicy synergyCards
+    playerHand.forEach((card) => {
+      if (currentCard.id !== card.id && synergyCards.includes(card.id)) {
+        console.log("bonus");
+      }
+    });
+
+    //jeżeli jej id znajduję się w tablicy synargyCard to zwróc warrtość bonusu
+    return bonusValue;
+  };
+
   useEffect(() => {
     let sum = [];
     playerHand.forEach((card) => {
@@ -141,22 +161,25 @@ export default function Play() {
       </section>
 
       <section className="playerHand">
-        {playerHand.map((card) => (
-          <div key={card.id} className="card-container">
+        {playerHand.map((currentCard) => (
+          <div key={currentCard.id} className="card-container">
             <div className="wrapper">
               <button
                 disabled={isGameFinished}
-                onClick={() => discardCard(card)}
+                onClick={() => discardCard(currentCard)}
               >
                 Discard
               </button>
               <p>
-                Total Value: <span className="score">{card.basePoints}</span>
+                Total Value:{" "}
+                <span className="score">
+                  {currentCard.basePoints + calculateCardBonus(currentCard)}
+                </span>
               </p>
             </div>
             <div
               style={{
-                backgroundImage: `url(./deck/${card.image})`,
+                backgroundImage: `url(./deck/${currentCard.image})`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
