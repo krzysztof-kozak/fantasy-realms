@@ -110,8 +110,13 @@ button:hover {
 }
 
 .card:hover {
-  transform: scale(1.5) translateY(15%);
+  transform: scale(1.5) translateY(15%) rotateY(360deg);
   transition: transform 1s;
+  animation: flip-vertical-left 0.4s ease-out;
+}
+
+.card:hover ~ .score {
+  color: hotpink;
 }
 
 .card-container .card {
