@@ -131,7 +131,7 @@ export default function Play() {
           </button>
 
           <span style={{ display: isGameStarted ? "block" : "none" }}>
-            Current score:<span className="score">{totalScore}</span>
+            Total Score:<span className="score">{totalScore}</span>
           </span>
         </section>
       </section>
@@ -163,7 +163,7 @@ export default function Play() {
                 Discard
               </button>
               <p>
-                Total Value:{" "}
+                Bonus Value:
                 <span className="score">
                   {currentCard.basePoints + calculateCardBonus(currentCard)}
                 </span>
