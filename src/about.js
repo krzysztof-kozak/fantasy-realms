@@ -15,7 +15,7 @@ export default function rules() {
           Hiya, my name is Kris and this is my game project. I copied an
           existing physical game called Fantasy Realms. The gameplay mechanics
           are simplified but I plan on expanding them in the future as my
-          knowledge and skill grow.
+          knowledge and skill grow.........
         </p>
       </div>
 
