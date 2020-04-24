@@ -163,7 +163,7 @@ export default function Play() {
                 Discard
               </button>
               <p>
-                Bonus Value:
+                Value:
                 <span className="score">
                   {currentCard.basePoints + calculateCardBonus(currentCard)}
                 </span>
