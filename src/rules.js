@@ -13,7 +13,7 @@ export default function rules() {
             You can discard a card in your hand 5 times via the discard button.
           </li>
           <li>Try to replace the lowest value card.</li>
-          <li>After 5 discards, you will see your final score</li>
+          <li>After 5 discards, you will see your final score.</li>
         </ul>
       </section>
       <Link className="link box" to="/">
