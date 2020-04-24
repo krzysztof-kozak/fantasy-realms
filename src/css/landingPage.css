@@ -23,8 +23,7 @@
     "footer footer footer";
 }
 
-.container section:hover,
-footer:hover {
+.container section:hover {
   transform: scale(1.1);
   border: 3px solid hotpink;
   transition: transform 2s ease-out, border 0.2s ease-out;
@@ -44,10 +43,10 @@ header > h1 {
   letter-spacing: 1rem;
 }
 
-header:hover {
-  transform: scale(1.1);
+header:hover,
+footer:hover {
   border: 3px solid hotpink;
-  transition: transform 2s ease-out, border 0.2s ease-out;
+  transition: border 0.2s ease-out;
 }
 
 header:hover h1 {
