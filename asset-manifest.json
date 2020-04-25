@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Kris-c0der/Fantasy-Realms/static/css/main.8d3a8e90.chunk.css",
-    "main.js": "/Kris-c0der/Fantasy-Realms/static/js/main.dc16b731.chunk.js",
-    "main.js.map": "/Kris-c0der/Fantasy-Realms/static/js/main.dc16b731.chunk.js.map",
-    "runtime-main.js": "/Kris-c0der/Fantasy-Realms/static/js/runtime-main.6026103e.js",
-    "runtime-main.js.map": "/Kris-c0der/Fantasy-Realms/static/js/runtime-main.6026103e.js.map",
-    "static/js/2.e5739a84.chunk.js": "/Kris-c0der/Fantasy-Realms/static/js/2.e5739a84.chunk.js",
-    "static/js/2.e5739a84.chunk.js.map": "/Kris-c0der/Fantasy-Realms/static/js/2.e5739a84.chunk.js.map",
-    "index.html": "/Kris-c0der/Fantasy-Realms/index.html",
-    "precache-manifest.75f9c166206da2ffee100f8eb7c2128b.js": "/Kris-c0der/Fantasy-Realms/precache-manifest.75f9c166206da2ffee100f8eb7c2128b.js",
-    "service-worker.js": "/Kris-c0der/Fantasy-Realms/service-worker.js",
-    "static/css/main.8d3a8e90.chunk.css.map": "/Kris-c0der/Fantasy-Realms/static/css/main.8d3a8e90.chunk.css.map",
-    "static/js/2.e5739a84.chunk.js.LICENSE.txt": "/Kris-c0der/Fantasy-Realms/static/js/2.e5739a84.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.9ccfa86c.chunk.css",
+    "main.js": "./static/js/main.2a6440b9.chunk.js",
+    "main.js.map": "./static/js/main.2a6440b9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.3aa58b0c.js",
+    "runtime-main.js.map": "./static/js/runtime-main.3aa58b0c.js.map",
+    "static/js/2.e5739a84.chunk.js": "./static/js/2.e5739a84.chunk.js",
+    "static/js/2.e5739a84.chunk.js.map": "./static/js/2.e5739a84.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.8bca9246c6c541ef257c3d8d0293389d.js": "./precache-manifest.8bca9246c6c541ef257c3d8d0293389d.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.9ccfa86c.chunk.css.map": "./static/css/main.9ccfa86c.chunk.css.map",
+    "static/js/2.e5739a84.chunk.js.LICENSE.txt": "./static/js/2.e5739a84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6026103e.js",
+    "static/js/runtime-main.3aa58b0c.js",
     "static/js/2.e5739a84.chunk.js",
-    "static/css/main.8d3a8e90.chunk.css",
-    "static/js/main.dc16b731.chunk.js"
+    "static/css/main.9ccfa86c.chunk.css",
+    "static/js/main.2a6440b9.chunk.js"
   ]
 }
