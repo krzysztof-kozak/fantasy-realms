@@ -90,7 +90,7 @@ button:hover {
 }
 
 .drawPile > div {
-  background: url(/deck/deck.jpg);
+  background: url(../img/deck.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
