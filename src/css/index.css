@@ -10,7 +10,12 @@
   --cream: #f3ffc6;
   --desert-sand: #ecc8ae;
   --rich-black: #000009;
-  --main-font: "Pacifico", serif;
+  --main-font: 'Pacifico', serif;
+  font-size: 16px;
 }
 
-
+@media (max-width: 550px) {
+  :root {
+    font-size: 12px;
+  }
+}

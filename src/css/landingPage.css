@@ -1,8 +1,7 @@
 .box {
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+  flex: 1 1 150px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
   margin: 5px;
 }
@@ -15,12 +14,12 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-rows: 3fr 2fr 100px;
   gap: 1rem;
   grid-template-areas:
-    "header header header"
-    "play rules about"
-    "footer footer footer";
+    'header header header'
+    'mid-section mid-section mid-section'
+    'footer footer footer';
 }
 
 .container section:hover {
@@ -41,6 +40,13 @@ header > h1 {
   font-size: 7rem;
   color: var(--cream);
   letter-spacing: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  header > h1 {
+    font-size: 5rem;
+  }
 }
 
 header:hover,
@@ -54,32 +60,17 @@ header:hover h1 {
   transition: 3s ease-out;
 }
 
-footer {
-  grid-area: footer;
-  background: var(--rich-black);
-  color: var(--desert-sand);
+.section-wrapper {
+  grid-area: mid-section;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: initial;
+  flex-flow: row wrap;
 }
 
 .play {
-  grid-area: play;
   background: var(--dark-slate-gray);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-footer {
-  color: var(--dark-slate-gray);
-  font-size: 2rem;
-}
-
-footer:hover p {
-  color: hotpink;
-  transition: 3s ease-out;
 }
 
 .rules {
@@ -97,6 +88,23 @@ footer:hover p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  color: var(--dark-slate-gray);
+  font-size: 2rem;
+  background: var(--rich-black);
+  color: var(--desert-sand);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: initial;
+}
+
+footer:hover p {
+  color: hotpink;
+  transition: 3s ease-out;
 }
 
 .linkedIn {
