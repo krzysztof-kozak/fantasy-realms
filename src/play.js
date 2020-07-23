@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import swal from "@sweetalert/with-react";
-import "../src/css/play.css";
-import deck from "./data/deck.json";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import swal from '@sweetalert/with-react';
+import '../src/css/play.css';
+import deck from './data/deck.json';
 
 export default function Play() {
   const [cards, setCards] = useState(deck.cards);
@@ -11,7 +11,7 @@ export default function Play() {
   const [totalScore, setTotalScore] = useState(0);
   const [isGameStarted, setisGameStarted] = useState(false);
   const [isGameFinished, setisGameFinished] = useState(false);
-  const [endGameMessageDiplay, setEndGameMessageDiplay] = useState("none");
+  const [endGameMessageDiplay, setEndGameMessageDiplay] = useState('none');
 
   function shuffle(array) {
     //Fisher–Yates shuffle: source: https://bost.ocks.org/mike/shuffle/
@@ -47,9 +47,7 @@ export default function Play() {
   const discardCard = (toDiscard) => {
     const copyCards = cards.slice();
     const firstCard = copyCards.splice(0, 1);
-    setPlayerHand((prev) => [
-      ...prev.map((card) => (card.id !== toDiscard.id ? card : firstCard[0])),
-    ]);
+    setPlayerHand((prev) => [...prev.map((card) => (card.id !== toDiscard.id ? card : firstCard[0]))]);
     setCards(copyCards);
     setDiscardPile((prev) => [...prev, { ...toDiscard }]);
   };
@@ -61,7 +59,7 @@ export default function Play() {
     setTotalScore(0);
     setisGameStarted(false);
     setisGameFinished(false);
-    setEndGameMessageDiplay("none");
+    setEndGameMessageDiplay('none');
   };
 
   const calculateCardBonus = (currentCard) => {
@@ -93,14 +91,14 @@ export default function Play() {
   useEffect(() => {
     if (discardPile.length >= 5) {
       setisGameFinished(true);
-      setEndGameMessageDiplay("block");
+      setEndGameMessageDiplay('block');
     }
   }, [discardPile]);
 
   useEffect(() => {
     if (isGameFinished === true) {
-      swal("Game Finished", `Your total score was ${totalScore}`, "success", {
-        buttons: ["Restart", "OK"],
+      swal('Game Finished', `Your total score was ${totalScore}`, 'success', {
+        buttons: ['Restart', 'OK'],
       }).then((value) => {
         if (value === null) {
           restartGame();
@@ -110,98 +108,81 @@ export default function Play() {
   }, [isGameFinished]);
 
   return (
-    <div className="gameContainer box">
-      <section className="drawPile">
-        <div></div>
-        <section>
-          <button
-            style={{ display: isGameStarted ? "none" : "block" }}
-            className="start-btn box"
-            onClick={handleStart}
-          >
-            Start
-          </button>
+    <div className='gameContainer box'>
+      <section className='drawPile'>
+        <div className='gamebox-logo'></div>
 
-          <button
-            className="restartButton box"
-            onClick={restartGame}
-            style={{ display: endGameMessageDiplay }}
-          >
-            Restart
-          </button>
+        <button style={{ display: isGameStarted ? 'none' : 'block' }} className='start-btn box' onClick={handleStart}>
+          Start
+        </button>
 
-          <span style={{ display: isGameStarted ? "block" : "none" }}>
-            Total Score:<span className="score">{totalScore}</span>
-          </span>
-        </section>
+        <button className='restartButton box' onClick={restartGame} style={{ display: endGameMessageDiplay }}>
+          Restart
+        </button>
+
+        <span style={{ display: isGameStarted ? 'block' : 'none' }}>
+          Total Score:<span className='score'>{totalScore}</span>
+        </span>
       </section>
 
-      <section className="discardPile">
+      <section className='discardPile'>
         {discardPile.map((card) => (
           <div
             key={card.id}
-            className="card"
+            className='card'
             style={{
               backgroundImage: `url(./deck/${card.image})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              height: "100%",
-            }}
-          ></div>
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center center',
+              height: '245px',
+              flex: '1 0 150px',
+              margin: '0 1em 1em 0',
+            }}></div>
         ))}
       </section>
 
-      <section className="playerHand">
+      <section className='playerHand'>
         {playerHand.map((currentCard) => (
-          <div key={currentCard.id} className="card-container">
-            <div className="wrapper">
-              <button
-                disabled={isGameFinished}
-                onClick={() => discardCard(currentCard)}
-              >
+          <div key={currentCard.id} className='card-container'>
+            <div className='wrapper'>
+              <button disabled={isGameFinished} onClick={() => discardCard(currentCard)}>
                 Discard
               </button>
               <p>
                 Value:
-                <span className="score">
-                  {currentCard.basePoints + calculateCardBonus(currentCard)}
-                </span>
+                <span className='score'>{currentCard.basePoints + calculateCardBonus(currentCard)}</span>
               </p>
             </div>
             <div
               style={{
                 backgroundImage: `url(./deck/${currentCard.image})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                height: "85%",
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center center',
+                height: '300px',
+                width: '200px',
+                flex: '0 0 100%',
+                margin: '30 1em 1em 0',
               }}
-              className="card"
-            ></div>
+              className='card'></div>
           </div>
         ))}
       </section>
 
-      <Link className="link box" to="/">
-        Back to Home
-      </Link>
-
-      <div className="wrapper">
-        <p
-          className="gameHint"
-          style={{ display: isGameStarted ? "flex" : "none" }}
-        >
+      <div className='wrapper'>
+        <p className='gameHint' style={{ display: isGameStarted ? 'flex' : 'none' }}>
           Try to get rid of cards that don't fit your hand :)
         </p>
-        <p
-          className="movesCounter box"
-          style={{ display: isGameStarted ? "flex" : "none" }}
-        >
+        <p className='movesCounter box' style={{ display: isGameStarted ? 'flex' : 'none' }}>
           You can discard
-          <span className="score">{5 - discardPile.length}</span> more time(s).
+          <span className='score'>{5 - discardPile.length}</span> more time(s).
         </p>
       </div>
+
+      <Link className='link box' to='/'>
+        Back to Home
+      </Link>
     </div>
   );
 }

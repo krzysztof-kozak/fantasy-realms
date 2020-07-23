@@ -36,7 +36,7 @@ export default function landingPage() {
         <a href='https://www.linkedin.com/in/kriskozak/' target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon className='linkedIn' icon={faLinkedin} />
         </a>
-        <a href='https://github.com/Kris-c0der/' target='_blank' rel='noopener noreferrer'>
+        <a href='https://github.com/krzysztof-kozak/' target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon className='linkedIn' icon={faGithub} />
         </a>
       </footer>

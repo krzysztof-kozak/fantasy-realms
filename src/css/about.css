@@ -6,7 +6,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: var(--cream);
   color: var(--rich-black);
@@ -14,24 +14,27 @@
 
 .aboutContainer .wrapper {
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
+  flex: 0 1 100px;
 }
 
 .aboutText {
   padding: 10px;
-  width: 60%;
   font-family: initial;
   text-align: justify;
   border-radius: 20px;
   background: var(--desert-sand);
+  flex: 0 1 50ch;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
-  /* border: 1px solid steelblue; */
+  border: 1px solid steelblue;
   border-radius: 50%;
+  flex: 1 0 auto;
+  max-width: 400px;
+  width: 100%;
 }
 
 .aboutContainer .link {
@@ -39,6 +42,7 @@
   padding: 5px;
   background: var(--dark-slate-gray);
   border-radius: 5px;
+  flex: 0 0 50px;
 }
 
 .aboutContainer .link:hover {

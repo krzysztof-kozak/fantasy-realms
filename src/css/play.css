@@ -2,17 +2,8 @@
   background: var(--desert-sand);
   font-family: var(--main-font);
   max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 5px;
-  border: 1px solid black;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr;
-  gap: 3rem;
-  grid-template-areas:
-    "drawPile discardPile"
-    "playerHand playerHand";
 }
 
 .gameContainer button {
@@ -34,6 +25,10 @@
   border-radius: 15px;
   font-size: 3rem;
   padding: 3px 30px;
+  flex: 1 0 auto;
+  max-width: 200px;
+  align-self: center;
+  justify-self: flex-start;
 }
 
 .start-btn:hover {
@@ -70,7 +65,8 @@ button:hover {
   background: khaki;
   border: 1px solid yellowgreen;
   border-radius: 5px;
-  justify-self: center;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .gameContainer .link:hover,
@@ -82,20 +78,21 @@ button:hover {
 }
 
 .drawPile {
-  grid-area: drawPile;
-  display: grid;
-  grid-template-rows: 2fr 1fr;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  flex-flow: column;
+  justify-content: center;
+  padding: 2em 5em;
 }
 
-.drawPile > div {
-  background: url(../img/deck.jpg);
+.gamebox-logo {
+  background: url(./../img/deck.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
-  width: 50%;
+  max-width: 275px;
+  width: 210px;
+  flex: 1 0 300px;
 }
 
 .drawPile section {
@@ -116,26 +113,29 @@ button:hover {
 }
 
 .discardPile {
-  grid-area: discardPile;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
   position: relative;
+  padding: 2em;
 }
 
 .discardPile::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0%;
   background: rgba(0, 0, 0, 0.56);
   border-radius: 20px;
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.65);
 }
 
 .discardPile::after {
-  content: "Discard Pile";
+  content: 'Discard Pile';
   font-family: initial;
   font-weight: bold;
   font-size: 2rem;
@@ -144,21 +144,22 @@ button:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 30%;
-  height: 15%;
-  top: 40%;
-  left: 35%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0%;
   background: hsla(0, 0%, 100%, 0.6);
   border-radius: 20px;
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.65);
 }
 
 .playerHand {
-  grid-area: playerHand;
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(7, 1fr);
-  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  margin: 3em 0;
 }
 
 .gameHint {
@@ -167,13 +168,9 @@ button:hover {
   font-size: 1.25rem;
   padding: 5px;
   color: hotpink;
-  justify-content: center;
-  align-items: center;
   background: hsla(0, 0%, 100%, 0.6);
   border-radius: 20px;
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.65);
-  position: absolute;
-  bottom: 85%;
 }
 
 .gameHint:hover {
@@ -188,9 +185,9 @@ button:hover {
   font-family: initial;
   font-size: 1.5rem;
   border-radius: 20px;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
+  flex: 0 50px;
+  text-align: center;
 }
 
 .movesCounter:hover {
@@ -203,11 +200,6 @@ button:hover {
   font-size: 1rem;
   align-self: center;
   height: 60%;
-}
-
-.card:hover {
-  transform: scale(1.5) translateY(15%) rotateY(360deg);
-  transition: transform 1s;
 }
 
 .card-container .card {
