@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Fantasy Realms
 
-A card game made in React. Go to [https://krzysztof-kozak.github.io/Fantasy-Realms](https://krzysztof-kozak.github.io/Fantasy-Realms) and try it out.
+A card game made in React. Go to [https://krzysztof-kozak.github.io/fantasy-realms](https://krzysztof-kozak.github.io/fantasy-realms) and try it out.
 
 ## How to get this project locally?
 
@@ -14,9 +14,9 @@ A card game made in React. Go to [https://krzysztof-kozak.github.io/Fantasy-Real
 4. Run the app in the developement mode for dev preview.
 
 ```
-git clone https://github.com/krzysztof-kozak/Fantasy-Realms.git
+git clone https://github.com/krzysztof-kozak/fantasy-realms.git
 
-cd Fantasy-Realms/
+cd fantasy-realms/
 
 npm install
 
